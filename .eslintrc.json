@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 9
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "allowEmptyCatch": 0,
+    "no-cond-assign": 0,
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "no-redeclare": "warn",
+    "no-undef": "error",
+    "no-global-assign": "warn",
+    "no-empty": "warn",
+    "complexity": ["warn", 40],
+    "max-statements": ["warn", 140],
+    "@typescript-eslint/no-empty-function": ["error", { "allow": ["arrowFunctions"] }],
+    "require-atomic-updates": "warn",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  }
+}
